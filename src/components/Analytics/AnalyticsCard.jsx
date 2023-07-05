@@ -30,7 +30,6 @@ function AnalyticsCard({ title, identifier, data }) {
       <div className="body">
         <ul>
           {data?.map((item, i) => {
-            console.log(item[identifier], SOCIAL_MEDIA_ICON[item[identifier]]);
             return (
               <>
                 <li>
