@@ -1,0 +1,56 @@
+.analytics-card {
+  flex: 1;
+}
+
+.analytics-card .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.analytics-card .header-title {
+  font-weight: bold;
+}
+.analytics-card a {
+  color: #ff5403;
+  font-size: 12px;
+  cursor: pointer;
+}
+.analytics-card .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.analytics-card .body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.analytics-card .body li {
+  list-style-type: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.analytics-card .body ul .percent {
+  font-weight: bold;
+}
+.analytics-card .body ul span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.analytics-card .graph {
+  width: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+  .analytics-card .graph {
+    width: 120px;
+  }
+  .analytics-card {
+    width: 100%;
+  }
+}
